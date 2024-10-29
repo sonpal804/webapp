@@ -1,16 +1,13 @@
-    4  sudo apt update && sudo apt  install docker.io
-    5  clear
-    6  docker ps
-    7  sudo chown nexus:nexus var/run/docker.sock
-    8  sudo chown nexus:nexus /var/run/docker.sock
-   10  docker ps
-   13  docker run -itd -p 8081:8081 --name nexus sonatype/nexus3
+sudo apt update && sudo apt  install docker.io
+clear
+docker ps
+sudo chown nexus:nexus var/run/docker.sock
+sudo chown nexus:nexus /var/run/docker.sock
+docker ps
+docker run -itd -p 8081:8081 --name nexus sonatype/nexus3
 
-
+docker exec -it nexus cat /nexus-data/admin.password
 
 sudo apt install maven
 
-
-
-
- mvn -s settings.xml clean deploy
+mvn -s settings.xml clean deploy
