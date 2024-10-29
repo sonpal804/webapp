@@ -77,14 +77,14 @@
       <uniqueVersion>false</uniqueVersion>
       <id>socgen2-releases</id>
       <name>socgen2-releases</name>
-      <url>http://20.0.104.27:8081/repository/socgen2-releases/</url>
+      <url>http://20.235.139.199:8081/repository/socgen2-releases</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>socgenb1-snapshots</id>
       <name>socgenb1-snapshots</name>
-      <url>http://20.0.104.27:8081/repository/socgenb1-snapshots/</url>
+      <url>http://20.235.139.199:8081/repository/socgenb1-snapshots/</url>
       <layout>legacy</layout>
     </snapshotRepository>
   </distributionManagement>
